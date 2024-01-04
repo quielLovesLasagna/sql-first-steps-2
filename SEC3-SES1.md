@@ -72,7 +72,25 @@ If we want to add more than 1 row, we can do that by:
 
 ![table](./assets/table2.2.png)
 
+**QUICK NOTE:** 
 
+When you insert values into this table using:
+
+```sql
+INSERT INTO tblSeconds
+VALUES (12), (34), (56);
+```
+
+You're adding three separate rows to the table, each with a single value in the myNumbers column.
+
+Now, let's contrast this with:
+
+```sql
+INSERT INTO SportTeams
+VALUES (23, 'Wolf FC', 2, 3);
+```
+
+In this case, you're inserting a single row with values for all columns of the SportTeams table. The values are provided in the order in which the columns were defined when you created the table (TeamID, TeamName, Attack, Defense).
 
 
 
