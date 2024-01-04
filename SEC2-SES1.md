@@ -1,4 +1,4 @@
-![image](https://github.com/quielLovesLasagna/sql-first-steps-2/assets/137391972/83370b63-78ac-4b38-8d66-7783e71bf942)# Section 2 - Session 1 - Starting SQL Server
+# Section 2 - Session 1 - Starting SQL Server
 
 - ## Creating a database
 
