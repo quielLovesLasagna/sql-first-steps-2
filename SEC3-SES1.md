@@ -92,11 +92,45 @@ VALUES (23, 'Wolf FC', 2, 3);
 
 In this case, you're inserting a single row with values for all columns of the SportTeams table. The values are provided in the order in which the columns were defined when you created the table (TeamID, TeamName, Attack, Defense).
 
+## Retrieving data
 
+- ```Selecting``` field from a table (printing/outputting a table):
 
+```sql
+SELECT (field/column name)
+FROM (table name)
+```
 
+![table](./assets/table3.3.png)
 
+In cases where you don't know the field name, you might want to just get every single field, to do that you can use the ```*``` (shorthand for everything)
 
+```sql
+SELECT *
+FROM (table name)
+```
+## Deleting the data, then the table
 
+There are two ways of doing this in T-SQL:
 
+- Using the ```DELETE``` command
+
+```sql
+DELETE
+FROM (table name)
+```
+
+This does not delete the table itself but it deletes the ```DATA```
+
+- Using ```TRUNCATE TABLE```
+
+```sql
+TRUNCATE TABLE tblSecond
+```
+
+This does not delete the table itself but it deletes the ```DATA```
+
+### Deleting the table itself
+
+We don't use the ```DELETE FROM``` and we don't use ```TRUNCATE TABLE```, we use ```DROP TABLE (table name)``` -> we drop it out of the database.
 
